@@ -1,48 +1,116 @@
 #include <torch/torch.h>
-
+#include "resnet.h"
+#include "dataset.h"
+#include <memory>
 #include <iostream>
 
-#include "dataset.h"
+void model(){
 
-cv::Mat TensortoCv(torch::Tensor x);
+ torch::Device device("cpu");
+  if (torch::cuda::is_available()){
+    std::cout<<"using cuda"<<std::endl;
+    device = torch::Device("cuda:0");
+  }
 
-int main() {
-  std::string root = "../dataset/";
-  auto train_dataset = CatDog(root)
-                           .map(torch::data::transforms::Normalize<>(
-                               {0.5, 0.5, 0.5}, {0.5, 0.5, 0.5}))
-                           .map(torch::data::transforms::Stack<>());
+  torch::Tensor input = torch::randn({2, 3, 224, 224}).to(device);
+  std::cout<<"build net"<<std::endl;
+  ResNet<BasicBlock> resnet = resnet18();
+  std::cout<<"net to device"<<std::endl;
+  resnet.to(device);
+ 
 
-  auto train_loader =
-      torch::data::make_data_loader<torch::data::samplers::RandomSampler>(
-          std::move(train_dataset), 4);
+  torch::optim::Adam opt(resnet.parameters(),torch::optim::AdamOptions(0.001));
 
-  auto test_dataset = CatDog(root, CatDog::Mode::kTest)
-                          .map(torch::data::transforms::Normalize<>(
-                              {0.5, 0.5, 0.5}, {0.5, 0.5, 0.5}))
-                          .map(torch::data::transforms::Stack<>());
-  auto test_loader =
-      torch::data::make_data_loader<torch::data::samplers::SequentialSampler>(
-          std::move(test_dataset), 4);
+  torch::Tensor target = torch::randn({2,1000}).to(device);
 
-  for (auto &batch : *train_loader) {
-    auto img = batch.data;
-    auto labels = batch.target;
-    auto out = TensortoCv(img[0]);
-    cv::imshow("Display window", out);
-    int k = cv::waitKey(50); 
+  for (size_t i = 0; i < 4; i++) {
+    std::cout<<"forward begin"<<std::endl<<std::flush;
+    torch::Tensor output = resnet.forward(input);
+    std::cout<<"forward end "<<output.sizes()<<std::endl<<std::flush;
+    auto loss = torch::mse_loss(output.view({2,1000}), target);
+    std::cout << "Loss " << i << " : " << loss.item<float>() << std::endl;
+    loss.backward();
+    opt.step();
+  }
+
+  std::cout<<"forward net"<<std::endl;
+  input = resnet.forward(input);
+  std::cout << input.sizes() << std::endl;
+}
+
+
+
+void dataset(){
+  CIFAR10_Dataset cifar("/home/lab-509/Downloads/cifar-10-batches-bin/", false); 
+
+  std::shared_ptr<torch::Tensor> data ;
+  std::shared_ptr<torch::Tensor> label;
+
+  cifar.GetBatchInTensor(2,data,label);
+
+  std::cout<<*data<<std::endl;
+  std::cout<<"-----------------------------------------------"<<std::endl;
+  std::cout<<*label<<std::endl;
+}
+
+
+void forward_cpu(){
+  torch::Device device("cpu");
+
+  CIFAR10_Dataset cifar("/home/lab-509/Downloads/cifar-10-batches-bin/", false); 
+
+  std::shared_ptr<torch::Tensor> input;
+  std::shared_ptr<torch::Tensor> target;
+
+  std::cout<<"build net"<<std::endl;
+  ResNet<BasicBlock> resnet = resnet18_cifar10();
+  std::cout<<"net to device"<<std::endl;
+
+  torch::optim::Adam opt(resnet.parameters(),torch::optim::AdamOptions(0.001));
+
+  for(int i = 0 ; i < 5 ; i++){
+    cifar.GetBatchInTensor(2,input,target);
+
+     
+    std::cout<<"forward begin"<<std::endl<<std::flush;
+    torch::Tensor output = resnet.forward(*input);
+    std::cout<<"forward end "<<output.sizes()<<std::endl<<std::flush;
+    auto loss = torch::mse_loss(output.view({2,10}), *target);
+    std::cout << "Loss " << i << " : " << loss.item<float>() << std::endl;
+    loss.backward();
+    opt.step();
   }
 }
 
-cv::Mat TensortoCv(torch::Tensor x) {
-  x = x.permute({1, 2, 0});
-  x = x.mul(0.5).add(0.5).mul(255).clamp(0, 255).to(torch::kByte);
-  x = x.contiguous();
-  int height = x.size(0);
-  int width = x.size(1);
-  cv::Mat output(cv::Size{width, height}, CV_8UC3);
-  std::memcpy((void *)output.data, x.data_ptr(),
-              sizeof(torch::kU8) * x.numel());
+void forward_gpu(){
+  torch::Device device("cuda:0");
 
-  return output.clone();
+  CIFAR10_Dataset cifar("/home/lab-509/Downloads/cifar-10-batches-bin/", false); 
+
+  std::shared_ptr<torch::Tensor> input;
+  std::shared_ptr<torch::Tensor> target;
+
+  std::cout<<"build net"<<std::endl;
+  ResNet<BasicBlock> resnet = resnet18_cifar10();
+  std::cout<<"net to device"<<std::endl;
+  resnet.to(device);
+  torch::optim::Adam opt(resnet.parameters(),torch::optim::AdamOptions(0.001));
+
+  for(int i = 0 ; i < 10000 ; i++){
+    cifar.GetBatchInTensor(2,input,target);
+    //std::cout<<"forward begin"<<std::endl<<std::flush;
+    torch::Tensor output = resnet.forward(input->to(device));
+    //std::cout<<"forward end "<<output.sizes()<<std::endl<<std::flush;
+    auto loss = torch::mse_loss(output.view({2,10}), target->to(device));
+    std::cout << "Loss " << i << " : " << loss.item<float>() << std::endl;
+    loss.backward();
+    opt.step();
+  }
+}
+
+int main(){
+  model();
+  //dataset();
+  forward_gpu();
+  forward_gpu();
 }

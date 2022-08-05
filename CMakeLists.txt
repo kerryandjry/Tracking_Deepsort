@@ -1,33 +1,30 @@
-cmake_minimum_required(VERSION 3.14)
-project( DisplayImage )
-set(CMAKE_PREFIX_PATH "/usr/local/lib/libtorch")
-set(CMAKE_INSTALL_PREFIX /usr/local)
-set(CMAKE_BUILD_TYPE Debug)
+cmake_minimum_required(VERSION 3.12)
+project(tracking_deepsort)
+
 set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+set(libtorch_VERSION 1.12.0)
 
-find_package( OpenCV REQUIRED )
-find_package(Torch REQUIRED)
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${TORCH_CXX_FLAGS}")
-# If the package has been found, several variables will
-# be set, you can find the full list with descriptions
-# in the OpenCVConfig.cmake file.
-# Print some message showing some of them
-message(STATUS "OpenCV library status:")
-message(STATUS "    config: ${OpenCV_DIR}")
-message(STATUS "    version: ${OpenCV_VERSION}")
-message(STATUS "    libraries: ${OpenCV_LIBS}")
-message(STATUS "    include path: ${OpenCV_INCLUDE_DIRS}")
+set(CMAKE_PREFIX_PATH "/usr/include/libtorch")
 
+find_package(Torch ${libtorch_VERSION} EXACT QUIET CONFIG)
+find_package(OpenCV REQUIRED)
 
-include_directories( ${OpenCV_INCLUDE_DIRS} )
-add_executable(main src/main.cpp 
-  src/dataset.cpp
-  include/dataset.h
-   )
+add_library(Torch SHARED IMPORTED)
+set_property(TEST PROPERTY ENVIRONMENT LD_PRELOAD=/usr/lib/libgomp.so)
+
+add_executable(main src/main.cpp)
 target_include_directories(main PRIVATE include)
-target_link_libraries( main ${OpenCV_LIBS})
-target_link_libraries(main "${TORCH_LIBRARIES}")
-set_property(TARGET main PROPERTY CXX_STANDARD 17)
+target_link_libraries(main ${TORCH_LIBRARIES} ${OpenCV_LIBS})
+#if(Torch_FOUND)
+  #message(STATUS "libtorch ${libtorch_VERSION} - found")
+  #macro(add_example name)
+    #add_executable(main src/main.cpp)
+    #target_include_directories(main PRIVATE include)
+    #target_link_libraries(main ${TORCH_LIBRARIES} ${OpenCV_LIBS})
+  #endmacro()
+
+#endif()
+
 

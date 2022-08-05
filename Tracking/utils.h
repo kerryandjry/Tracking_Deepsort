@@ -6,8 +6,8 @@
 #include <algorithm> 
 
 // OpenCV library
-#include "opencv\cv.h"
-#include "opencv\highgui.h"
+#include "opencv/cv.h"
+#include "opencv/highgui.h"
 
 #include "opencv2/objdetect/objdetect.hpp"
 #include "opencv2/highgui/highgui.hpp"
