@@ -6,5 +6,5 @@ CXX_DEFINES = -DUSE_C10D_GLOO -DUSE_C10D_NCCL -DUSE_DISTRIBUTED -DUSE_RPC -DUSE_
 
 CXX_INCLUDES = -I/home/lab-509/work/cpp/torch/Tracking_Deepsort/include -isystem /usr/include/libtorch/include -isystem /usr/include/libtorch/include/torch/csrc/api/include -isystem /opt/cuda/include -isystem /usr/include/opencv4
 
-CXX_FLAGS = -D_GLIBCXX_USE_CXX11_ABI=0 -std=gnu++17
+CXX_FLAGS = -O3 -DNDEBUG -D_GLIBCXX_USE_CXX11_ABI=0 -std=gnu++17
 

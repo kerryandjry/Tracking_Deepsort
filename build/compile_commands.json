@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/lab-509/work/cpp/torch/Tracking_Deepsort/build",
+  "command": "/usr/bin/c++ -DUSE_C10D_GLOO -DUSE_C10D_NCCL -DUSE_DISTRIBUTED -DUSE_RPC -DUSE_TENSORPIPE -I/home/lab-509/work/cpp/torch/Tracking_Deepsort/include -isystem /usr/include/libtorch/include -isystem /usr/include/libtorch/include/torch/csrc/api/include -isystem /opt/cuda/include -isystem /usr/include/opencv4 -O3 -DNDEBUG -D_GLIBCXX_USE_CXX11_ABI=0 -std=gnu++17 -o CMakeFiles/main.dir/src/main.cpp.o -c /home/lab-509/work/cpp/torch/Tracking_Deepsort/src/main.cpp",
+  "file": "/home/lab-509/work/cpp/torch/Tracking_Deepsort/src/main.cpp"
+}
+]
