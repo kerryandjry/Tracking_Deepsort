@@ -1,11 +1,6 @@
 CMakeFiles/main.dir/src/main.cpp.o: \
  /home/lab-509/work/cpp/torch/Tracking_Deepsort/src/main.cpp \
- /usr/include/stdc-predef.h \
- /home/lab-509/work/cpp/torch/Tracking_Deepsort/src/dataset.h \
- /usr/include/libtorch/include/c10/util/ArrayRef.h \
- /usr/include/libtorch/include/c10/util/C++17.h \
- /usr/include/libtorch/include/c10/macros/Macros.h \
- /usr/include/c++/12.1.0/cassert \
+ /usr/include/stdc-predef.h /usr/include/c++/12.1.0/exception \
  /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -13,31 +8,29 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /usr/include/sys/cdefs.h /usr/include/bits/long-double.h \
  /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
  /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/cpu_defines.h \
- /usr/include/c++/12.1.0/pstl/pstl_config.h /usr/include/assert.h \
- /usr/include/libtorch/include/c10/macros/cmake_macros.h \
- /usr/include/libtorch/include/c10/macros/Export.h \
- /usr/include/c++/12.1.0/sstream /usr/include/c++/12.1.0/istream \
+ /usr/include/c++/12.1.0/pstl/pstl_config.h \
+ /usr/include/c++/12.1.0/bits/exception.h \
+ /usr/include/c++/12.1.0/bits/exception_ptr.h \
+ /usr/include/c++/12.1.0/bits/exception_defines.h \
+ /usr/include/c++/12.1.0/bits/cxxabi_init_exception.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/stddef.h \
+ /usr/include/c++/12.1.0/typeinfo \
+ /usr/include/c++/12.1.0/bits/hash_bytes.h /usr/include/c++/12.1.0/new \
+ /usr/include/c++/12.1.0/bits/move.h /usr/include/c++/12.1.0/type_traits \
+ /usr/include/c++/12.1.0/bits/nested_exception.h \
+ /usr/include/c++/12.1.0/iostream /usr/include/c++/12.1.0/ostream \
  /usr/include/c++/12.1.0/ios /usr/include/c++/12.1.0/iosfwd \
  /usr/include/c++/12.1.0/bits/stringfwd.h \
  /usr/include/c++/12.1.0/bits/memoryfwd.h \
  /usr/include/c++/12.1.0/bits/postypes.h /usr/include/c++/12.1.0/cwchar \
  /usr/include/wchar.h /usr/include/bits/libc-header-start.h \
  /usr/include/bits/floatn.h /usr/include/bits/floatn-common.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/stddef.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/stdarg.h \
  /usr/include/bits/wchar.h /usr/include/bits/types/wint_t.h \
  /usr/include/bits/types/mbstate_t.h \
  /usr/include/bits/types/__mbstate_t.h /usr/include/bits/types/__FILE.h \
  /usr/include/bits/types/FILE.h /usr/include/bits/types/locale_t.h \
- /usr/include/bits/types/__locale_t.h /usr/include/c++/12.1.0/exception \
- /usr/include/c++/12.1.0/bits/exception.h \
- /usr/include/c++/12.1.0/bits/exception_ptr.h \
- /usr/include/c++/12.1.0/bits/exception_defines.h \
- /usr/include/c++/12.1.0/bits/cxxabi_init_exception.h \
- /usr/include/c++/12.1.0/typeinfo \
- /usr/include/c++/12.1.0/bits/hash_bytes.h /usr/include/c++/12.1.0/new \
- /usr/include/c++/12.1.0/bits/move.h /usr/include/c++/12.1.0/type_traits \
- /usr/include/c++/12.1.0/bits/nested_exception.h \
+ /usr/include/bits/types/__locale_t.h \
  /usr/include/c++/12.1.0/bits/char_traits.h \
  /usr/include/c++/12.1.0/cstdint \
  /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/stdint.h \
@@ -140,36 +133,18 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/ctype_inline.h \
  /usr/include/c++/12.1.0/bits/locale_facets.tcc \
  /usr/include/c++/12.1.0/bits/basic_ios.tcc \
- /usr/include/c++/12.1.0/ostream /usr/include/c++/12.1.0/bits/ostream.tcc \
- /usr/include/c++/12.1.0/bits/istream.tcc \
- /usr/include/c++/12.1.0/bits/sstream.tcc \
- /usr/include/c++/12.1.0/functional /usr/include/c++/12.1.0/tuple \
- /usr/include/c++/12.1.0/bits/uses_allocator.h \
- /usr/include/c++/12.1.0/bits/std_function.h \
- /usr/include/c++/12.1.0/unordered_map \
- /usr/include/c++/12.1.0/ext/aligned_buffer.h \
- /usr/include/c++/12.1.0/bits/hashtable.h \
- /usr/include/c++/12.1.0/bits/hashtable_policy.h \
- /usr/include/c++/12.1.0/bits/enable_special_members.h \
- /usr/include/c++/12.1.0/bits/node_handle.h \
- /usr/include/c++/12.1.0/bits/unordered_map.h \
- /usr/include/c++/12.1.0/bits/erase_if.h /usr/include/c++/12.1.0/vector \
+ /usr/include/c++/12.1.0/bits/ostream.tcc /usr/include/c++/12.1.0/istream \
+ /usr/include/c++/12.1.0/bits/istream.tcc /usr/include/c++/12.1.0/memory \
  /usr/include/c++/12.1.0/bits/stl_uninitialized.h \
- /usr/include/c++/12.1.0/bits/stl_vector.h \
- /usr/include/c++/12.1.0/bits/stl_bvector.h \
- /usr/include/c++/12.1.0/bits/vector.tcc /usr/include/c++/12.1.0/array \
- /usr/include/c++/12.1.0/compare /usr/include/c++/12.1.0/bits/stl_algo.h \
- /usr/include/c++/12.1.0/bits/algorithmfwd.h \
- /usr/include/c++/12.1.0/bits/stl_heap.h \
  /usr/include/c++/12.1.0/bits/stl_tempbuf.h \
- /usr/include/c++/12.1.0/bits/uniform_int_dist.h \
- /usr/include/c++/12.1.0/memory \
  /usr/include/c++/12.1.0/bits/stl_raw_storage_iter.h \
  /usr/include/c++/12.1.0/bits/align.h /usr/include/c++/12.1.0/bit \
- /usr/include/c++/12.1.0/bits/unique_ptr.h \
+ /usr/include/c++/12.1.0/bits/uses_allocator.h \
+ /usr/include/c++/12.1.0/bits/unique_ptr.h /usr/include/c++/12.1.0/tuple \
  /usr/include/c++/12.1.0/bits/shared_ptr.h \
  /usr/include/c++/12.1.0/bits/shared_ptr_base.h \
  /usr/include/c++/12.1.0/bits/allocated_ptr.h \
+ /usr/include/c++/12.1.0/ext/aligned_buffer.h \
  /usr/include/c++/12.1.0/ext/concurrence.h \
  /usr/include/c++/12.1.0/bits/shared_ptr_atomic.h \
  /usr/include/c++/12.1.0/bits/atomic_base.h \
@@ -177,13 +152,51 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /usr/include/c++/12.1.0/backward/auto_ptr.h \
  /usr/include/c++/12.1.0/pstl/glue_memory_defs.h \
  /usr/include/c++/12.1.0/pstl/execution_defs.h \
+ /usr/include/libtorch/include/torch/csrc/api/include/torch/torch.h \
+ /usr/include/libtorch/include/torch/csrc/api/include/torch/all.h \
+ /usr/include/libtorch/include/torch/csrc/api/include/torch/cuda.h \
+ /usr/include/libtorch/include/torch/csrc/Export.h \
+ /usr/include/libtorch/include/c10/macros/Export.h \
+ /usr/include/libtorch/include/c10/macros/cmake_macros.h \
+ /usr/include/c++/12.1.0/cstddef \
+ /usr/include/libtorch/include/torch/csrc/api/include/torch/data.h \
+ /usr/include/libtorch/include/torch/csrc/api/include/torch/data/dataloader.h \
+ /usr/include/libtorch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h \
+ /usr/include/libtorch/include/torch/csrc/api/include/torch/data/dataloader/base.h \
+ /usr/include/libtorch/include/torch/csrc/api/include/torch/data/dataloader_options.h \
+ /usr/include/libtorch/include/torch/csrc/api/include/torch/arg.h \
  /usr/include/c++/12.1.0/utility \
  /usr/include/c++/12.1.0/bits/stl_relops.h \
- /usr/include/libtorch/include/c10/util/Deprecated.h \
+ /usr/include/libtorch/include/torch/csrc/api/include/torch/types.h \
+ /usr/include/libtorch/include/ATen/ATen.h \
+ /usr/include/libtorch/include/c10/core/Allocator.h \
+ /usr/include/libtorch/include/c10/core/Device.h \
+ /usr/include/libtorch/include/c10/core/DeviceType.h \
+ /usr/include/libtorch/include/c10/macros/Macros.h \
+ /usr/include/c++/12.1.0/cassert /usr/include/assert.h \
+ /usr/include/c++/12.1.0/sstream /usr/include/c++/12.1.0/bits/sstream.tcc \
+ /usr/include/c++/12.1.0/functional \
+ /usr/include/c++/12.1.0/bits/std_function.h \
+ /usr/include/c++/12.1.0/unordered_map \
+ /usr/include/c++/12.1.0/bits/hashtable.h \
+ /usr/include/c++/12.1.0/bits/hashtable_policy.h \
+ /usr/include/c++/12.1.0/bits/enable_special_members.h \
+ /usr/include/c++/12.1.0/bits/node_handle.h \
+ /usr/include/c++/12.1.0/bits/unordered_map.h \
+ /usr/include/c++/12.1.0/bits/erase_if.h /usr/include/c++/12.1.0/vector \
+ /usr/include/c++/12.1.0/bits/stl_vector.h \
+ /usr/include/c++/12.1.0/bits/stl_bvector.h \
+ /usr/include/c++/12.1.0/bits/vector.tcc /usr/include/c++/12.1.0/array \
+ /usr/include/c++/12.1.0/compare /usr/include/c++/12.1.0/bits/stl_algo.h \
+ /usr/include/c++/12.1.0/bits/algorithmfwd.h \
+ /usr/include/c++/12.1.0/bits/stl_heap.h \
+ /usr/include/c++/12.1.0/bits/uniform_int_dist.h \
  /usr/include/libtorch/include/c10/util/Exception.h \
+ /usr/include/libtorch/include/c10/util/Deprecated.h \
  /usr/include/libtorch/include/c10/util/StringUtil.h \
  /usr/include/libtorch/include/c10/util/string_utils.h \
  /usr/include/libtorch/include/c10/util/string_view.h \
+ /usr/include/libtorch/include/c10/util/C++17.h \
  /usr/include/libtorch/include/c10/util/reverse_iterator.h \
  /usr/include/c++/12.1.0/iterator \
  /usr/include/c++/12.1.0/bits/stream_iterator.h \
@@ -191,33 +204,39 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /usr/include/c++/12.1.0/pstl/glue_algorithm_defs.h \
  /usr/include/c++/12.1.0/cstring /usr/include/string.h \
  /usr/include/strings.h /usr/include/c++/12.1.0/limits \
- /usr/include/c++/12.1.0/cstddef \
- /usr/include/libtorch/include/c10/util/SmallVector.h \
- /usr/include/libtorch/include/c10/util/AlignOf.h \
- /usr/include/c++/12.1.0/fstream /usr/include/c++/12.1.0/bits/codecvt.h \
- /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/basic_file.h \
- /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/c++io.h \
- /usr/include/c++/12.1.0/bits/fstream.tcc \
- /usr/include/c++/12.1.0/iostream /usr/include/opencv4/opencv2/opencv.hpp \
- /usr/include/opencv4/opencv2/opencv_modules.hpp \
- /usr/include/opencv4/opencv2/core.hpp \
- /usr/include/opencv4/opencv2/core/cvdef.h \
- /usr/include/opencv4/opencv2/core/version.hpp \
- /usr/include/opencv4/opencv2/core/hal/interface.h \
- /usr/include/opencv4/opencv2/core/cv_cpu_dispatch.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/emmintrin.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/xmmintrin.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/mmintrin.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/mm_malloc.h \
- /usr/include/c++/12.1.0/stdlib.h \
- /usr/include/opencv4/opencv2/core/base.hpp \
+ /usr/include/libtorch/include/c10/util/ThreadLocalDebugInfo.h \
+ /usr/include/libtorch/include/c10/util/UniqueVoidPtr.h \
+ /usr/include/libtorch/include/ATen/core/ATenGeneral.h \
+ /usr/include/libtorch/include/ATen/Context.h \
+ /usr/include/libtorch/include/ATen/core/Generator.h \
+ /usr/include/c++/12.1.0/mutex /usr/include/c++/12.1.0/bits/chrono.h \
+ /usr/include/c++/12.1.0/ratio /usr/include/c++/12.1.0/ctime \
+ /usr/include/c++/12.1.0/bits/parse_numbers.h \
+ /usr/include/c++/12.1.0/bits/std_mutex.h \
+ /usr/include/c++/12.1.0/bits/unique_lock.h /usr/include/c++/12.1.0/deque \
+ /usr/include/c++/12.1.0/bits/stl_deque.h \
+ /usr/include/c++/12.1.0/bits/deque.tcc /usr/include/c++/12.1.0/atomic \
+ /usr/include/libtorch/include/c10/util/intrusive_ptr.h \
+ /usr/include/libtorch/include/c10/util/ExclusivelyOwned.h \
+ /usr/include/libtorch/include/c10/util/in_place.h \
+ /usr/include/libtorch/include/c10/util/MaybeOwned.h \
  /usr/include/c++/12.1.0/climits \
  /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed/limits.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include-fixed/syslimits.h \
  /usr/include/limits.h /usr/include/bits/posix1_lim.h \
  /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
  /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
- /usr/include/bits/uio_lim.h /usr/include/opencv4/opencv2/core/cvstd.hpp \
+ /usr/include/bits/uio_lim.h \
+ /usr/include/libtorch/include/c10/core/DispatchKeySet.h \
+ /usr/include/libtorch/include/c10/core/DispatchKey.h \
+ /usr/include/libtorch/include/c10/util/ArrayRef.h \
+ /usr/include/libtorch/include/c10/util/SmallVector.h \
+ /usr/include/libtorch/include/c10/util/AlignOf.h \
+ /usr/include/libtorch/include/c10/util/Metaprogramming.h \
+ /usr/include/libtorch/include/c10/util/Array.h \
+ /usr/include/libtorch/include/c10/util/TypeList.h \
+ /usr/include/libtorch/include/c10/util/TypeTraits.h \
+ /usr/include/libtorch/include/c10/util/llvmMathExtras.h \
  /usr/include/c++/12.1.0/cmath /usr/include/math.h \
  /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
  /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
@@ -237,160 +256,6 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /usr/include/c++/12.1.0/tr1/poly_hermite.tcc \
  /usr/include/c++/12.1.0/tr1/poly_laguerre.tcc \
  /usr/include/c++/12.1.0/tr1/riemann_zeta.tcc \
- /usr/include/opencv4/opencv2/core/cvstd_wrapper.hpp \
- /usr/include/opencv4/opencv2/core/neon_utils.hpp \
- /usr/include/opencv4/opencv2/core/vsx_utils.hpp \
- /usr/include/opencv4/opencv2/core/check.hpp \
- /usr/include/opencv4/opencv2/core/traits.hpp \
- /usr/include/opencv4/opencv2/core/matx.hpp \
- /usr/include/opencv4/opencv2/core/saturate.hpp \
- /usr/include/opencv4/opencv2/core/fast_math.hpp \
- /usr/include/opencv4/opencv2/core/types.hpp \
- /usr/include/c++/12.1.0/cfloat \
- /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/float.h \
- /usr/include/opencv4/opencv2/core/mat.hpp \
- /usr/include/opencv4/opencv2/core/bufferpool.hpp \
- /usr/include/opencv4/opencv2/core/mat.inl.hpp \
- /usr/include/opencv4/opencv2/core/persistence.hpp \
- /usr/include/opencv4/opencv2/core/operations.hpp \
- /usr/include/opencv4/opencv2/core/cvstd.inl.hpp \
- /usr/include/c++/12.1.0/complex \
- /usr/include/opencv4/opencv2/core/utility.hpp \
- /usr/include/c++/12.1.0/mutex /usr/include/c++/12.1.0/bits/chrono.h \
- /usr/include/c++/12.1.0/ratio /usr/include/c++/12.1.0/ctime \
- /usr/include/c++/12.1.0/bits/parse_numbers.h \
- /usr/include/c++/12.1.0/bits/std_mutex.h \
- /usr/include/c++/12.1.0/bits/unique_lock.h \
- /usr/include/opencv4/opencv2/core/optim.hpp \
- /usr/include/opencv4/opencv2/core/ovx.hpp \
- /usr/include/opencv4/opencv2/core/cvdef.h \
- /usr/include/opencv4/opencv2/calib3d.hpp \
- /usr/include/opencv4/opencv2/features2d.hpp \
- /usr/include/opencv4/opencv2/flann/miniflann.hpp \
- /usr/include/opencv4/opencv2/flann/defines.h \
- /usr/include/opencv4/opencv2/flann/config.h \
- /usr/include/opencv4/opencv2/core/affine.hpp \
- /usr/include/opencv4/opencv2/dnn.hpp \
- /usr/include/opencv4/opencv2/dnn/dnn.hpp \
- /usr/include/opencv4/opencv2/core/async.hpp \
- /usr/include/c++/12.1.0/chrono \
- /usr/include/opencv4/opencv2/dnn/version.hpp \
- /usr/include/opencv4/opencv2/dnn/dict.hpp /usr/include/c++/12.1.0/map \
- /usr/include/c++/12.1.0/bits/stl_tree.h \
- /usr/include/c++/12.1.0/bits/stl_map.h \
- /usr/include/c++/12.1.0/bits/stl_multimap.h \
- /usr/include/opencv4/opencv2/dnn/layer.hpp \
- /usr/include/opencv4/opencv2/dnn/dnn.inl.hpp \
- /usr/include/opencv4/opencv2/dnn/utils/inference_engine.hpp \
- /usr/include/opencv4/opencv2/dnn/dnn.hpp \
- /usr/include/opencv4/opencv2/flann.hpp \
- /usr/include/opencv4/opencv2/flann/flann_base.hpp \
- /usr/include/opencv4/opencv2/flann/general.h \
- /usr/include/opencv4/opencv2/flann/matrix.h \
- /usr/include/opencv4/opencv2/flann/params.h \
- /usr/include/opencv4/opencv2/flann/any.h \
- /usr/include/opencv4/opencv2/flann/defines.h \
- /usr/include/opencv4/opencv2/flann/saving.h \
- /usr/include/opencv4/opencv2/flann/nn_index.h \
- /usr/include/opencv4/opencv2/flann/result_set.h \
- /usr/include/c++/12.1.0/set /usr/include/c++/12.1.0/bits/stl_set.h \
- /usr/include/c++/12.1.0/bits/stl_multiset.h \
- /usr/include/opencv4/opencv2/flann/all_indices.h \
- /usr/include/opencv4/opencv2/flann/kdtree_index.h \
- /usr/include/opencv4/opencv2/flann/dynamic_bitset.h \
- /usr/include/opencv4/opencv2/flann/dist.h \
- /usr/include/opencv4/opencv2/flann/heap.h \
- /usr/include/opencv4/opencv2/flann/allocator.h \
- /usr/include/opencv4/opencv2/flann/random.h \
- /usr/include/opencv4/opencv2/flann/kdtree_single_index.h \
- /usr/include/opencv4/opencv2/flann/kmeans_index.h \
- /usr/include/opencv4/opencv2/flann/logger.h \
- /usr/include/opencv4/opencv2/flann/composite_index.h \
- /usr/include/opencv4/opencv2/flann/linear_index.h \
- /usr/include/opencv4/opencv2/flann/hierarchical_clustering_index.h \
- /usr/include/opencv4/opencv2/flann/lsh_index.h \
- /usr/include/opencv4/opencv2/flann/lsh_table.h \
- /usr/include/c++/12.1.0/iomanip /usr/include/c++/12.1.0/locale \
- /usr/include/c++/12.1.0/bits/locale_facets_nonio.h \
- /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/time_members.h \
- /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/messages_members.h \
- /usr/include/libintl.h \
- /usr/include/c++/12.1.0/bits/locale_facets_nonio.tcc \
- /usr/include/c++/12.1.0/bits/locale_conv.h \
- /usr/include/c++/12.1.0/bits/quoted_string.h \
- /usr/include/c++/12.1.0/math.h \
- /usr/include/opencv4/opencv2/flann/autotuned_index.h \
- /usr/include/opencv4/opencv2/flann/ground_truth.h \
- /usr/include/opencv4/opencv2/flann/index_testing.h \
- /usr/include/opencv4/opencv2/flann/timer.h \
- /usr/include/opencv4/opencv2/flann/sampling.h \
- /usr/include/opencv4/opencv2/highgui.hpp \
- /usr/include/opencv4/opencv2/imgcodecs.hpp \
- /usr/include/opencv4/opencv2/videoio.hpp \
- /usr/include/opencv4/opencv2/imgproc.hpp \
- /usr/include/opencv4/opencv2/imgproc/segmentation.hpp \
- /usr/include/opencv4/opencv2/ml.hpp \
- /usr/include/opencv4/opencv2/ml/ml.inl.hpp \
- /usr/include/opencv4/opencv2/objdetect.hpp \
- /usr/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp \
- /usr/include/opencv4/opencv2/objdetect/face.hpp \
- /usr/include/opencv4/opencv2/photo.hpp \
- /usr/include/opencv4/opencv2/stitching.hpp \
- /usr/include/opencv4/opencv2/stitching/warpers.hpp \
- /usr/include/opencv4/opencv2/stitching/detail/warpers.hpp \
- /usr/include/opencv4/opencv2/core/cuda.hpp \
- /usr/include/opencv4/opencv2/core/cuda_types.hpp \
- /usr/include/opencv4/opencv2/core/cuda.inl.hpp \
- /usr/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp \
- /usr/include/opencv4/opencv2/stitching/detail/warpers.hpp \
- /usr/include/opencv4/opencv2/stitching/detail/matchers.hpp \
- /usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp \
- /usr/include/opencv4/opencv2/stitching/detail/matchers.hpp \
- /usr/include/opencv4/opencv2/stitching/detail/util.hpp \
- /usr/include/c++/12.1.0/list /usr/include/c++/12.1.0/bits/stl_list.h \
- /usr/include/c++/12.1.0/bits/list.tcc \
- /usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp \
- /usr/include/c++/12.1.0/queue /usr/include/c++/12.1.0/deque \
- /usr/include/c++/12.1.0/bits/stl_deque.h \
- /usr/include/c++/12.1.0/bits/deque.tcc \
- /usr/include/c++/12.1.0/bits/stl_queue.h \
- /usr/include/opencv4/opencv2/stitching/detail/camera.hpp \
- /usr/include/opencv4/opencv2/stitching/detail/exposure_compensate.hpp \
- /usr/include/opencv4/opencv2/stitching/detail/seam_finders.hpp \
- /usr/include/opencv4/opencv2/stitching/detail/blenders.hpp \
- /usr/include/opencv4/opencv2/stitching/detail/camera.hpp \
- /usr/include/opencv4/opencv2/video.hpp \
- /usr/include/opencv4/opencv2/video/tracking.hpp \
- /usr/include/opencv4/opencv2/video/background_segm.hpp \
- /usr/include/c++/12.1.0/random /usr/include/c++/12.1.0/bits/random.h \
- /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/opt_random.h \
- /usr/include/c++/12.1.0/bits/random.tcc /usr/include/c++/12.1.0/numeric \
- /usr/include/c++/12.1.0/bits/stl_numeric.h \
- /usr/include/c++/12.1.0/pstl/glue_numeric_defs.h \
- /usr/include/libtorch/include/torch/csrc/api/include/torch/data/datasets/base.h \
- /usr/include/libtorch/include/torch/csrc/api/include/torch/data/example.h \
- /usr/include/libtorch/include/torch/csrc/api/include/torch/types.h \
- /usr/include/libtorch/include/ATen/ATen.h \
- /usr/include/libtorch/include/c10/core/Allocator.h \
- /usr/include/libtorch/include/c10/core/Device.h \
- /usr/include/libtorch/include/c10/core/DeviceType.h \
- /usr/include/libtorch/include/c10/util/ThreadLocalDebugInfo.h \
- /usr/include/libtorch/include/c10/util/UniqueVoidPtr.h \
- /usr/include/libtorch/include/ATen/core/ATenGeneral.h \
- /usr/include/libtorch/include/ATen/Context.h \
- /usr/include/libtorch/include/ATen/core/Generator.h \
- /usr/include/c++/12.1.0/atomic \
- /usr/include/libtorch/include/c10/util/intrusive_ptr.h \
- /usr/include/libtorch/include/c10/util/ExclusivelyOwned.h \
- /usr/include/libtorch/include/c10/util/in_place.h \
- /usr/include/libtorch/include/c10/util/MaybeOwned.h \
- /usr/include/libtorch/include/c10/core/DispatchKeySet.h \
- /usr/include/libtorch/include/c10/core/DispatchKey.h \
- /usr/include/libtorch/include/c10/util/Metaprogramming.h \
- /usr/include/libtorch/include/c10/util/Array.h \
- /usr/include/libtorch/include/c10/util/TypeList.h \
- /usr/include/libtorch/include/c10/util/TypeTraits.h \
- /usr/include/libtorch/include/c10/util/llvmMathExtras.h \
  /usr/include/libtorch/include/c10/core/GeneratorImpl.h \
  /usr/include/libtorch/include/c10/core/TensorImpl.h \
  /usr/include/libtorch/include/c10/core/Backend.h \
@@ -411,6 +276,7 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /usr/include/libtorch/include/c10/util/Half.h \
  /usr/include/libtorch/include/c10/util/TypeSafeSignMath.h \
  /usr/include/libtorch/include/c10/util/complex.h \
+ /usr/include/c++/12.1.0/complex \
  /usr/include/libtorch/include/c10/util/complex_math.h \
  /usr/include/libtorch/include/c10/util/complex_utils.h \
  /usr/include/libtorch/include/c10/util/Half-inl.h \
@@ -442,7 +308,28 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /usr/include/libtorch/include/c10/core/impl/SizesAndStrides.h \
  /usr/include/libtorch/include/c10/util/Logging.h \
  /usr/include/libtorch/include/c10/util/logging_is_not_google_glog.h \
+ /usr/include/c++/12.1.0/chrono /usr/include/c++/12.1.0/fstream \
+ /usr/include/c++/12.1.0/bits/codecvt.h \
+ /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/basic_file.h \
+ /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/c++io.h \
+ /usr/include/c++/12.1.0/bits/fstream.tcc /usr/include/c++/12.1.0/iomanip \
+ /usr/include/c++/12.1.0/locale \
+ /usr/include/c++/12.1.0/bits/locale_facets_nonio.h \
+ /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/time_members.h \
+ /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/messages_members.h \
+ /usr/include/libintl.h \
+ /usr/include/c++/12.1.0/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/12.1.0/bits/locale_conv.h \
+ /usr/include/c++/12.1.0/bits/quoted_string.h /usr/include/c++/12.1.0/map \
+ /usr/include/c++/12.1.0/bits/stl_tree.h \
+ /usr/include/c++/12.1.0/bits/stl_map.h \
+ /usr/include/c++/12.1.0/bits/stl_multimap.h /usr/include/c++/12.1.0/set \
+ /usr/include/c++/12.1.0/bits/stl_set.h \
+ /usr/include/c++/12.1.0/bits/stl_multiset.h \
  /usr/include/libtorch/include/c10/util/accumulate.h \
+ /usr/include/c++/12.1.0/numeric \
+ /usr/include/c++/12.1.0/bits/stl_numeric.h \
+ /usr/include/c++/12.1.0/pstl/glue_numeric_defs.h \
  /usr/include/libtorch/include/c10/util/safe_numerics.h \
  /usr/include/libtorch/include/ATen/CPUGeneratorImpl.h \
  /usr/include/libtorch/include/ATen/core/MT19937RNGEngine.h \
@@ -4229,7 +4116,6 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /usr/include/libtorch/include/ATen/core/grad_mode.h \
  /usr/include/libtorch/include/torch/csrc/api/include/torch/detail/TensorDataContainer.h \
  /usr/include/libtorch/include/torch/csrc/autograd/variable.h \
- /usr/include/libtorch/include/torch/csrc/Export.h \
  /usr/include/libtorch/include/torch/csrc/autograd/edge.h \
  /usr/include/libtorch/include/torch/csrc/autograd/function_hook.h \
  /usr/include/libtorch/include/torch/csrc/autograd/cpp_hook.h \
@@ -4272,6 +4158,8 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /usr/include/libtorch/include/ATen/core/dispatch/DispatchKeyExtractor.h \
  /usr/include/libtorch/include/c10/util/Bitset.h \
  /usr/include/libtorch/include/ATen/core/Variadic.h \
+ /usr/include/c++/12.1.0/list /usr/include/c++/12.1.0/bits/stl_list.h \
+ /usr/include/c++/12.1.0/bits/list.tcc \
  /usr/include/libtorch/include/ATen/record_function.h \
  /usr/include/libtorch/include/c10/util/variant.h \
  /usr/include/libtorch/include/c10/util/LeftRight.h \
@@ -4279,17 +4167,9 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /usr/include/c++/12.1.0/shared_mutex /usr/include/c++/12.1.0/thread \
  /usr/include/c++/12.1.0/bits/std_thread.h \
  /usr/include/c++/12.1.0/bits/this_thread_sleep.h \
- /usr/include/libtorch/include/torch/csrc/api/include/torch/torch.h \
- /usr/include/libtorch/include/torch/csrc/api/include/torch/all.h \
- /usr/include/libtorch/include/torch/csrc/api/include/torch/cuda.h \
- /usr/include/libtorch/include/torch/csrc/api/include/torch/data.h \
- /usr/include/libtorch/include/torch/csrc/api/include/torch/data/dataloader.h \
- /usr/include/libtorch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h \
- /usr/include/libtorch/include/torch/csrc/api/include/torch/data/dataloader/base.h \
- /usr/include/libtorch/include/torch/csrc/api/include/torch/data/dataloader_options.h \
- /usr/include/libtorch/include/torch/csrc/api/include/torch/arg.h \
  /usr/include/libtorch/include/torch/csrc/api/include/torch/data/detail/data_shuttle.h \
  /usr/include/libtorch/include/torch/csrc/api/include/torch/data/detail/queue.h \
+ /usr/include/c++/12.1.0/queue /usr/include/c++/12.1.0/bits/stl_queue.h \
  /usr/include/libtorch/include/torch/csrc/api/include/torch/data/detail/sequencers.h \
  /usr/include/libtorch/include/torch/csrc/api/include/torch/data/iterator.h \
  /usr/include/libtorch/include/torch/csrc/utils/variadic.h \
@@ -4299,6 +4179,8 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /usr/include/libtorch/include/torch/csrc/utils/memory.h \
  /usr/include/libtorch/include/torch/csrc/api/include/torch/data/dataloader/stateless.h \
  /usr/include/libtorch/include/torch/csrc/api/include/torch/data/datasets.h \
+ /usr/include/libtorch/include/torch/csrc/api/include/torch/data/datasets/base.h \
+ /usr/include/libtorch/include/torch/csrc/api/include/torch/data/example.h \
  /usr/include/libtorch/include/torch/csrc/api/include/torch/data/datasets/chunk.h \
  /usr/include/libtorch/include/torch/csrc/api/include/torch/data/datasets/stateful.h \
  /usr/include/libtorch/include/torch/csrc/api/include/torch/data/samplers.h \
@@ -4415,6 +4297,11 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/xtestintrin.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/hresetintrin.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/immintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/mmintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/xmmintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/mm_malloc.h \
+ /usr/include/c++/12.1.0/stdlib.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/emmintrin.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/pmmintrin.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/tmmintrin.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/smmintrin.h \
@@ -4570,4 +4457,116 @@ CMakeFiles/main.dir/src/main.cpp.o: \
  /usr/include/libtorch/include/torch/csrc/autograd/autograd.h \
  /usr/include/libtorch/include/torch/csrc/autograd/autograd_not_implemented_fallback.h \
  /usr/include/libtorch/include/torch/csrc/api/include/torch/version.h \
+ /home/lab-509/work/cpp/torch/Tracking_Deepsort/src/dataset.h \
+ /usr/include/opencv4/opencv2/opencv.hpp \
+ /usr/include/opencv4/opencv2/opencv_modules.hpp \
+ /usr/include/opencv4/opencv2/core.hpp \
+ /usr/include/opencv4/opencv2/core/cvdef.h \
+ /usr/include/opencv4/opencv2/core/version.hpp \
+ /usr/include/opencv4/opencv2/core/hal/interface.h \
+ /usr/include/opencv4/opencv2/core/cv_cpu_dispatch.h \
+ /usr/include/opencv4/opencv2/core/base.hpp \
+ /usr/include/opencv4/opencv2/core/cvstd.hpp \
+ /usr/include/opencv4/opencv2/core/cvstd_wrapper.hpp \
+ /usr/include/opencv4/opencv2/core/neon_utils.hpp \
+ /usr/include/opencv4/opencv2/core/vsx_utils.hpp \
+ /usr/include/opencv4/opencv2/core/check.hpp \
+ /usr/include/opencv4/opencv2/core/traits.hpp \
+ /usr/include/opencv4/opencv2/core/matx.hpp \
+ /usr/include/opencv4/opencv2/core/saturate.hpp \
+ /usr/include/opencv4/opencv2/core/fast_math.hpp \
+ /usr/include/opencv4/opencv2/core/types.hpp \
+ /usr/include/c++/12.1.0/cfloat \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/12.1.0/include/float.h \
+ /usr/include/opencv4/opencv2/core/mat.hpp \
+ /usr/include/opencv4/opencv2/core/bufferpool.hpp \
+ /usr/include/opencv4/opencv2/core/mat.inl.hpp \
+ /usr/include/opencv4/opencv2/core/persistence.hpp \
+ /usr/include/opencv4/opencv2/core/operations.hpp \
+ /usr/include/opencv4/opencv2/core/cvstd.inl.hpp \
+ /usr/include/opencv4/opencv2/core/utility.hpp \
+ /usr/include/opencv4/opencv2/core/optim.hpp \
+ /usr/include/opencv4/opencv2/core/ovx.hpp \
+ /usr/include/opencv4/opencv2/core/cvdef.h \
+ /usr/include/opencv4/opencv2/calib3d.hpp \
+ /usr/include/opencv4/opencv2/features2d.hpp \
+ /usr/include/opencv4/opencv2/flann/miniflann.hpp \
+ /usr/include/opencv4/opencv2/flann/defines.h \
+ /usr/include/opencv4/opencv2/flann/config.h \
+ /usr/include/opencv4/opencv2/core/affine.hpp \
+ /usr/include/opencv4/opencv2/dnn.hpp \
+ /usr/include/opencv4/opencv2/dnn/dnn.hpp \
+ /usr/include/opencv4/opencv2/core/async.hpp \
+ /usr/include/opencv4/opencv2/dnn/version.hpp \
+ /usr/include/opencv4/opencv2/dnn/dict.hpp \
+ /usr/include/opencv4/opencv2/dnn/layer.hpp \
+ /usr/include/opencv4/opencv2/dnn/dnn.inl.hpp \
+ /usr/include/opencv4/opencv2/dnn/utils/inference_engine.hpp \
+ /usr/include/opencv4/opencv2/dnn/dnn.hpp \
+ /usr/include/opencv4/opencv2/flann.hpp \
+ /usr/include/opencv4/opencv2/flann/flann_base.hpp \
+ /usr/include/opencv4/opencv2/flann/general.h \
+ /usr/include/opencv4/opencv2/flann/matrix.h \
+ /usr/include/opencv4/opencv2/flann/params.h \
+ /usr/include/opencv4/opencv2/flann/any.h \
+ /usr/include/opencv4/opencv2/flann/defines.h \
+ /usr/include/opencv4/opencv2/flann/saving.h \
+ /usr/include/opencv4/opencv2/flann/nn_index.h \
+ /usr/include/opencv4/opencv2/flann/result_set.h \
+ /usr/include/opencv4/opencv2/flann/all_indices.h \
+ /usr/include/opencv4/opencv2/flann/kdtree_index.h \
+ /usr/include/opencv4/opencv2/flann/dynamic_bitset.h \
+ /usr/include/opencv4/opencv2/flann/dist.h \
+ /usr/include/opencv4/opencv2/flann/heap.h \
+ /usr/include/opencv4/opencv2/flann/allocator.h \
+ /usr/include/opencv4/opencv2/flann/random.h \
+ /usr/include/opencv4/opencv2/flann/kdtree_single_index.h \
+ /usr/include/opencv4/opencv2/flann/kmeans_index.h \
+ /usr/include/opencv4/opencv2/flann/logger.h \
+ /usr/include/opencv4/opencv2/flann/composite_index.h \
+ /usr/include/opencv4/opencv2/flann/linear_index.h \
+ /usr/include/opencv4/opencv2/flann/hierarchical_clustering_index.h \
+ /usr/include/opencv4/opencv2/flann/lsh_index.h \
+ /usr/include/opencv4/opencv2/flann/lsh_table.h \
+ /usr/include/c++/12.1.0/math.h \
+ /usr/include/opencv4/opencv2/flann/autotuned_index.h \
+ /usr/include/opencv4/opencv2/flann/ground_truth.h \
+ /usr/include/opencv4/opencv2/flann/index_testing.h \
+ /usr/include/opencv4/opencv2/flann/timer.h \
+ /usr/include/opencv4/opencv2/flann/sampling.h \
+ /usr/include/opencv4/opencv2/highgui.hpp \
+ /usr/include/opencv4/opencv2/imgcodecs.hpp \
+ /usr/include/opencv4/opencv2/videoio.hpp \
+ /usr/include/opencv4/opencv2/imgproc.hpp \
+ /usr/include/opencv4/opencv2/imgproc/segmentation.hpp \
+ /usr/include/opencv4/opencv2/ml.hpp \
+ /usr/include/opencv4/opencv2/ml/ml.inl.hpp \
+ /usr/include/opencv4/opencv2/objdetect.hpp \
+ /usr/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp \
+ /usr/include/opencv4/opencv2/objdetect/face.hpp \
+ /usr/include/opencv4/opencv2/photo.hpp \
+ /usr/include/opencv4/opencv2/stitching.hpp \
+ /usr/include/opencv4/opencv2/stitching/warpers.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/warpers.hpp \
+ /usr/include/opencv4/opencv2/core/cuda.hpp \
+ /usr/include/opencv4/opencv2/core/cuda_types.hpp \
+ /usr/include/opencv4/opencv2/core/cuda.inl.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/warpers.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/matchers.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/matchers.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/util.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/camera.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/exposure_compensate.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/seam_finders.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/blenders.hpp \
+ /usr/include/opencv4/opencv2/stitching/detail/camera.hpp \
+ /usr/include/opencv4/opencv2/video.hpp \
+ /usr/include/opencv4/opencv2/video/tracking.hpp \
+ /usr/include/opencv4/opencv2/video/background_segm.hpp \
+ /usr/include/c++/12.1.0/random /usr/include/c++/12.1.0/bits/random.h \
+ /usr/include/c++/12.1.0/x86_64-pc-linux-gnu/bits/opt_random.h \
+ /usr/include/c++/12.1.0/bits/random.tcc \
  /home/lab-509/work/cpp/torch/Tracking_Deepsort/src/resnet.h
