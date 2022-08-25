@@ -4,11 +4,9 @@ project(tracking_deepsort)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-set(libtorch_VERSION 1.12.0)
-
 set(CMAKE_PREFIX_PATH "/usr/include/libtorch")
 
-find_package(Torch ${libtorch_VERSION} EXACT QUIET CONFIG)
+find_package(Torch REQUIRED)
 find_package(OpenCV REQUIRED)
 
 add_library(Torch SHARED IMPORTED)
