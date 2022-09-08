@@ -6,8 +6,8 @@ if [ -d "$BUILDDir" ]; then
     rm -rf $BUILDDir
 fi
 
-cmake -B $BUILDDir
+cmake -B $BUILDDir -GNinja
 
 cd $BUILDDir
 
-make -j8
+ninja
