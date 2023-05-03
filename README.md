@@ -12,3 +12,5 @@ I have used utility functions from other wonderful open-source projects. Espeici
 
 * [chenjianqu/Tracking-Solov2-Deepsort](https://github.com/chenjianqu/Tracking-Solov2-Deepsort).
 * [zhangjinsong3/SOLOv2.tensorRT](https://github.com/zhangjinsong3/SOLOv2.tensorRT).
+* [HKUST-Aerial-Robotics/VINS-Fusion](https://github.com/HKUST-Aerial-Robotics/VINS-Fusion)
+* [IntelRealSense/realsense-ros](https://github.com/IntelRealSense/realsense-ros)
